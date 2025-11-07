@@ -49,8 +49,7 @@ OR
 
 sudo chmod 777 /var/run/docker.sock
 ```
-#
-- <b id="Jenkins">Install and configure Jenkins (Master machine)</b>
+# Install and configure Jenkins (Master machine)
 ## Sometimes Jenkins older versions are cached, clear them:
   sudo rm -f /etc/apt/sources.list.d/jenkins.list
   sudo rm -f /usr/share/keyrings/jenkins-keyring.asc
