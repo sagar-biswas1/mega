@@ -201,13 +201,13 @@ sudo apt install -y trivy
 trivy --version
 ```
 
-#
+
 ## Add email for notification
 <p>
   Follow this 
   <a href="https://docs.google.com/document/d/1dFRT_RP4yhHcCMiZug1mMVc3XWnDap8g4iMR8XLIAHw/view" target="_blank">document</a> for email app and set it up to Jenkins
 </p>
-#
+
 ## Steps to implement the project:
 - <b>Go to Jenkins Master and click on <mark> Manage Jenkins --> Plugins --> Available plugins</mark> install the below plugins:</b>
   - OWASP Dependency-Check
