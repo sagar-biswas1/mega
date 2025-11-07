@@ -161,10 +161,22 @@ aws configure
 
 - <bInstall and configure SonarQube (Master machine)</b>
 ```bash
-docker run -itd --name SonarQube-Server -p 9000:9000 sonarqube:lts-community
+    Pull the latest SonarQube Community Edition
+    docker pull sonarqube:community
+
+    Run it:
+        docker run -d \
+          --name sonarqube \
+          -p 9000:9000 \
+          -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true \
+          sonarqube:community
 ```
 ```bash
-Got to the link: <ec2-machine-ip>:9000/ and setup account
+    docker ps
+    You should see SonarQube container is running
+```
+```bash
+    Got to the link: <ec2-machine-ip>:9000/ and setup SonarQube account
 ```
 #
 - <b id="Trivy">Install Trivy (Jenkins Master)</b>
