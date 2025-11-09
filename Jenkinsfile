@@ -122,7 +122,8 @@ pipeline {
             build job: "mega-CD", parameters: [
                 string(name: 'FRONTEND_DOCKER_TAG', value: "${params.FRONTEND_DOCKER_TAG}"),
                 string(name: 'BACKEND_DOCKER_TAG', value: "${params.BACKEND_DOCKER_TAG}")
-            ]
+            ],
+            propagate: false
         }
     }
 }
