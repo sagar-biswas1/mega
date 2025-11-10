@@ -179,7 +179,7 @@ aws configure
   kubectl get nodes -n mega
   Also, go to AWS EC2, you should see your desired node machines got created
 ```
-
+#
 - Install and configure SonarQube (Master machine)
 - <i>Pull the latest SonarQube Community Edition</i>
 ```bash
