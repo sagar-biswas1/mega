@@ -1,10 +1,12 @@
 import 'dotenv/config';
 
 
+import 'dotenv/config'; 
+
 import cors from 'cors'; 
 import express from 'express';
 import router from './routes/router.mjs'; 
-import productRouter from './routes/productRoutes.mjs'; 
+import productRouter from './routes/productRoutes.mjs';
 import connectDatabase from './config/db.mjs';
 import { PORT } from './config/utils.mjs';
 
