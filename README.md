@@ -41,7 +41,11 @@ sudo apt update
 ```bash
 sudo apt-get install docker.io -y
 
-sudo usermod -aG docker ubuntu && newgrp docker 
+sudo usermod -aG docker ubuntu && newgrp docker
+
+sudo chown $USER /var/run/docker.sock 
+
+OR
 
 sudo reboot
 
