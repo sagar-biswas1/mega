@@ -110,7 +110,15 @@ sudo apt update -y
 aws --version
 aws configure
 ```
-
+## aws configure will ask for AWS Access key ID
+  - where to get this -> aws IAM -> Users -> Create User -> [insert-username] -> Next -> attach policies directly -> AdministratorAccess -> Next
+  - Click on created user -> security credentials -> Create access key -> Command Line Interface -> Next -> create access key [here you will find 'access key','Secret access key' ]
+     * AWS Access key ID -> access key
+     * AWS Secret Access key : Secret access key
+     * Default Region name : <region where my instance is running [for example us-west-2]>
+     * Then check by provideing aws configure again
+   
+       
 ## Create an AWS Role Called mega-ec2-role and attach it to Master machine
   - Create Role:
     AWS IAM > roles > Create role > AWS Service > Use case (ec2) > Next > AdministratorAccess> Role name (mega-ec2-role) > Create Role
