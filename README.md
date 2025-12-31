@@ -1,5 +1,9 @@
 # Full Stack MERN APP
 
+## Architechture
+
+<img width="817" height="459" alt="Screenshot 2025-12-31 at 1 01 48 PM" src="https://github.com/user-attachments/assets/a5bac0f3-45c8-4cf4-b1b3-276f19bd794c" />
+
 ## Tech stack used in this project:
 - GitHub (Code)
 - Docker (Container)
@@ -497,3 +501,4 @@ kubectl get secret --namespace prometheus stable-grafana -o jsonpath="{.data.adm
 eksctl delete cluster --name=mega --region=us-west-2
 Delete the master machine
 ```
+
