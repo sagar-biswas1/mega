@@ -162,6 +162,7 @@ aws configure
   ```
   - <b>Create Nodegroup on Master machine, it might take 15 to 20 minutes</b>
   - <i>It will create 2 nodes ec2 machines</i>
+  >  Make sure the ssh-public-key "eks-nodegroup-key" is available in your aws account
   ```bash
   eksctl create nodegroup --cluster=mega \
                        --region=us-west-2 \
